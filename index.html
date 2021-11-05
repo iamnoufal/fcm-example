@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>FCM Message Receiving UI</title>
+		<script src="/__/firebase/8.3.0/firebase-app.js"></script>
+		<script src="/__/firebase/8.3.0/firebase-firestore.js"></script>
+		<script src="/__/firebase/8.3.0/firebase-messaging.js"></script>
+		<script src="/__/firebase/init.js"></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				font-family: "Helvetica";
+				background: linear-gradient(to bottom right, #ccccff 25%, #cc00cc 100%);
+				height: 100vh
+			}
+			div {
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+			}
+			.main {
+				display: grid;
+				align-content: center;
+				height: 100vh;
+			}
+			.sub {
+				padding: 2rem;
+				display: block;
+				border-radius: 1rem;
+				background: rgba(255, 255, 255, 0.3);
+				box-shadow: 0 0 15px rgba(0,0,0,0.3);
+				margin: 1rem
+			}
+			#request {
+				background: rgba(0,0,0,0.2);
+				margin: 1rem;
+				border-radius: 1rem;
+				cursor: pointer;
+				transition: 0.3s;
+			}
+			#request:hover {
+				color: rgba(255,255,255,0.6);
+				transition: 0.3s;
+			}
+			p, h4 {
+				margin: 0.4rem;
+				word-wrap: anywhere
+			}
+		</style>
+  </head>
+  <body>
+  	<div class="main">
+  		<div class="sub">
+				<div id="request" onclick="requestPermission()" ><h3 style="margin: 0.5rem">Enable Notification</h3></div>
+				<p>You should enable Notifications for this demo!!</p>
+			</div>
+		</div>
+  	<script src="msg.js"></script>
+  </body>
