@@ -8,9 +8,14 @@ Firebase offers Cloud Messaging as one of its Backend-as-a-service. You can subs
 
 ## Initialization
 - Create a folder:
-  - `mkdir messaging`
-  - `cd messaging`
-- Clone this repository by running  ```git clone git@github.com:Rahman24/fcm-example```
+  ```
+  mkdir messaging
+  cd messaging  
+  ```
+- Clone this repository by running  
+  ```
+  git clone https://github.com:Rahman24/fcm-example
+  ```
 - Create two new files  `firebase.json`  and  `.firebaserc`
 - Contents of  `firebase.json`:
 
@@ -31,10 +36,12 @@ Firebase offers Cloud Messaging as one of its Backend-as-a-service. You can subs
   ```.firebaserc
   {
     "projects": {
-      "default": "<project name>"
+      "default": "<PROJECT NAME>"
     }
   }
+  Replace <PROJECT NAME> with your firebase project name
   ```
+  
 - Go to fcm-example folder and open `msg.js`. Replace `<PUBLIC VAPID KEY>` with the Public VAPID key from your project settings.
 - Go to admin folder and open  `admin.js`. Replace `<SERVER KEY>` with the Server key from your project settings.
 - Go to root folder and run  `firebase serve`  It starts the local development server at http://localhost:5000
