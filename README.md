@@ -39,7 +39,7 @@ Firebase offers Cloud Messaging as one of its Backend-as-a-service. You can subs
       "default": "<PROJECT NAME>"
     }
   }
-  Replace <PROJECT NAME> with your firebase project name
+  // Replace <PROJECT NAME> with your firebase project name
   ```
   
 - Go to fcm-example folder and open `msg.js`. Replace `<PUBLIC VAPID KEY>` with the Public VAPID key from your project settings.
