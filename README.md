@@ -59,3 +59,5 @@ If you have any issues in the code, go to Issues pannel and describe your issue
   Post the error if any logged to the console
   Post Screenshots
   ```
+
+Made with care by [Noufal Rahman](https://github.com/Rahman24)
